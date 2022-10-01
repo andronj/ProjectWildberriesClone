@@ -9,12 +9,17 @@
 @import '../scss/fonts.scss';
 @import '../scss/mixins.scss';
 @import '../scss/variables.scss';
+@import '../scss/header.scss';
 
 
 html {
     font-family: 'Raleway', 'Cardo', sans-serif;
 }
 
+
+body {
+    background-color: $_grey;
+}
 
 
 .container {

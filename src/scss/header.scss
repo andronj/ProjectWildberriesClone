@@ -1,0 +1,55 @@
+.header {
+    padding: 25px 0px 0px 0px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -15px;
+}
+.header-logo {
+    margin: 0 15px;
+}
+.header-search {
+    margin: 0 15px;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.header-search input{
+    width: 400px;
+    height: 70px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: $_white;
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+     -o-transition: background .55s ease;
+     transition: background .55s ease;
+}
+.header-search input:hover{
+    outline:none;
+    background: #ffffff;
+    color: $_black;
+}
+.header-pocket {
+    margin: 0 15px;
+}
+.fa-solid {
+}
+.fa-basket-shopping {
+    font-size: $_64px;
+    color: purple;
+    transition: 0.2s;
+}
+
+.fa-basket-shopping:hover{
+    transform: scale(1.2);
+}
