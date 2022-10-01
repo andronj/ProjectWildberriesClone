@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import '../scss/fonts.scss';
+@import '../scss/mixins.scss';
+@import '../scss/variables.scss';
+
+
+html {
+    font-family: 'Raleway', 'Cardo', sans-serif;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+    @media (max-width:1200px){
+        max-width: 970px;   
+    }
+    @media (max-width:850px){
+        max-width: 670px;     
+    }
+    @media (max-width:479.98px){
+        max-width: none;
+    }
+}
+
