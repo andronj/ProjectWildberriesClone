@@ -1,7 +1,8 @@
 #viewport {
-    width: 100vw;
-    height: 450px;
+    max-width: 1170px;
     overflow: hidden;
+    margin-top: 20px;
+    
 }
  
 .slider {
@@ -16,24 +17,44 @@
  
 .slide {
     width: 100%;
-    height: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+   
+   
 }
  
 .slide img {
     width: 100%;
-    height: 450px;
     object-fit: cover;
-    object-position: 0;
+    object-position: center;
+    height: 100%;
+    border-radius: 16px;
 }
  
 #viewSlider {
     width: calc(30px * 5);
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
  
 .viewSlide {
     width: 20px;
     height: 20px;
     background-color: red;
+    margin: auto;
+    
+}
+
+.prev{
+   display: block;
+   margin: auto;
+
+}
+
+.next{
+    display: block;
+    margin: auto;
 }
