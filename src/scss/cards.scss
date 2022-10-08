@@ -40,11 +40,17 @@
 //     justify-content: space-between;
     
 // }
+.footerElem{
+    display: flex;
+    justify-content: space-between;
+}
 .discount {
     font-size: $_24px;
+    
 }
 .fa-sharp {
     font-size: $_24px;
+    
     
     
 }
