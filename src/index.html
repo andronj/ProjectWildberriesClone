@@ -18,7 +18,7 @@
                 <input type="search" id="search" placeholder="Поиск...">
            </div>
            <div class="header-pocket">
-                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                <a class="mainbagg" id="mainbag" href="#"><i class="fa-solid fa-basket-shopping" data-modal-open="modal-1"></i></a>
            </div>
         </div>
     </div>
@@ -56,7 +56,7 @@
             <div class="card-row">
                 <template id="card">
                     <div class="card">
-                        <a class="quickView" href="#">Быстрый просмотр</a>
+                        <a class="quick-view-btn" href="#">Быстрый просмотр</a>
                         <img src="https://4-20shop.ru/files/products/5dm30293_13.999x999.jpg?0e1a071b7792c4f748f85bf29f570a56"/>
                         <div class="addToBasket">
                             <span class="discount">10%</span>
@@ -66,12 +66,34 @@
                         <h2 class="title">Штаны</h2>
                     </div>
                 </template>
+                <dialog class="dialog-window">
+                    <div class="quick-view-img">
+                      <img
+                        src="./img/slider-block/2.jpg"
+                        alt="#"
+                      />
+                    </div>
+                    <div class="close-dialog">X</div>
+                  </dialog>
             </div>
         </div>
     </div>
-   </section>   
-<script type="module" src="./js/script.js"></script> 
+   </section> 
+   <div class="_modal" data-modal="modal-1">
+    <div class="modal-bg">
+        <div class="modal-body">
+            <div class="modal-close"><img src="./img/close.svg" alt=""></div>
+            <div class="modal-content modal-callback">
+                <span>КОРЗИНА</span>
+                <div class="modal-callback__title">Товар1</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 <script src="./js/slider.js"></script>   
 <script src="./js/cards.js"></script>
+<script src="./js/plugins/plugins.js"></script>
+<script type="module" src="./js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 // Добавляем эластичный поиск по элементам списка
 document.querySelector('#search').oninput = function () {
     let val = this.value.trim();
@@ -20,7 +22,7 @@ document.querySelector('#search').oninput = function () {
     }
 
 
-    
+
 
 
 
