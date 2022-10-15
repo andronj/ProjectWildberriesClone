@@ -1,11 +1,3 @@
-// const data = [
-//     {
-//         src: 'https://4-20shop.ru/files/products/5dm30293_13.999x999.jpg?0e1a071b7792c4f748f85bf29f570a56',
-//         price: '990',
-//         title: 'Штаны',
-//     }
-// ]
-
 async function getData() {
     const response = await fetch('https://634a971833bb42dca406ee5a.mockapi.io/cards');
     return await response.json();
