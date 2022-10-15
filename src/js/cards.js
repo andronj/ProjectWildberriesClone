@@ -1,7 +1,41 @@
-const cardRoot = document.querySelector('.cards-root');
-const ElementCard = document.createElement('div');
-const ElementCardQuickScreen = document.createElement('a');
+// const data = [
+//     {
+//         src: 'https://4-20shop.ru/files/products/5dm30293_13.999x999.jpg?0e1a071b7792c4f748f85bf29f570a56',
+//         price: '990',
+//         title: 'Штаны',
+//     }
+// ]
+
+async function getData() {
+    const response = await fetch('https://634a971833bb42dca406ee5a.mockapi.io/cards');
+    return await response.json();
+}
 
 
-ElementCard.classList.add('cardelement');
-cardRoot.appendChild(ElementCard);
+
+function renderCard(item){
+    const template = document.getElementById('card').content.cloneNode(true);
+
+    const img = template.querySelector('img');
+    const price = template.querySelector('.price');
+    const title = template.querySelector('.title');
+
+    img.src = item.src;
+    price.textContent = item.price;
+    title.textContent = item.title;
+
+    return template;
+}
+
+getData().then(data => {
+    //Преобразовывае данные в html элементы
+    const cardsNote = data.map(renderCard);
+
+    //Отрисовываем наши карточки в DOM
+    const CardRoot = document.querySelector('.cards-root');
+    CardRoot.append(...cardsNote);
+});
+
+
+
+
