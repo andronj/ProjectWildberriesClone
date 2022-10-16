@@ -8,13 +8,16 @@ async function getData() {
 function renderCard(item){
     const template = document.getElementById('card').content.cloneNode(true);
 
-    const img = template.querySelector('img');
+    const img = template.querySelector('.card img');
     const price = template.querySelector('.price');
     const title = template.querySelector('.title');
-
+    const quickViewImg = template.querySelector('.quick-view-img img');
     img.src = item.src;
     price.textContent = item.price;
     title.textContent = item.title;
+    quickViewImg.src = item.src;
+    
+
 
     return template;
 }
