@@ -24,6 +24,9 @@
 const modalBtns = document.querySelectorAll('.fa-basket-shopping');
 const modals = document.querySelectorAll('._modal');
 const body = document.body;
+// const modalBasket = document.querySelector('.modal-callback__title');
+// const productsAtBasket = [];
+
 
 function openModal(elem) {
 	elem.classList.add('_active');
@@ -62,13 +65,18 @@ window.addEventListener('keydown', e => {
 	})
 })
 
+// function addToBasket(data) {
+// 	cards.addEventListener('click', (event) =>{
+// 		if (event.target.classList.contains('fa-bag-shopping')) {
+// 			productsAtBasket.push({
+// 				titleproduct: event.target.parentElement.parentElement.parentElement.id,
+// 				price:event.target.parentElement.parentElement.parentElement.id,}
+// 		)}
+	
+// 	return modalBasket.appendChild(productsAtBasket);
+// }
 
-
-
-
-
-
-
+	
 
 
 //модалка быстрого просмотра
@@ -85,5 +93,3 @@ cards.addEventListener("click", (event) => {
       quickViewWindow.close();
     }
   });
-
-
